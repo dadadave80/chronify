@@ -1,5 +1,6 @@
 import useGetUser from "@/hooks/useGetUser";
 import Logo from "./logo";
+import { WalletConnect } from "./wallet-connect";
 
 const Header = ({
   sidebarOpen,
@@ -67,7 +68,7 @@ const Header = ({
         </div>
 
         <div className="flex items-center gap-3">
-          <appkit-button />
+          <WalletConnect />
         </div>
       </div>
     </header>

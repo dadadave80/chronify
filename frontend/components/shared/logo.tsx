@@ -20,7 +20,6 @@ const Logo = ({
         width={800}
         height={252}
         priority
-        quality={100}
       />
     </Link>
   );

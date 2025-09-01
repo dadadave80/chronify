@@ -15,6 +15,7 @@ import {
   SelectValue,
 } from "../ui/select";
 import useRegister from "@/hooks/useRegister";
+import { WalletConnect } from "../shared/wallet-connect";
 
 const registerSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -36,7 +37,7 @@ const RegisterForm = () => {
             image="/white-logo-nobg.png"
           />
         </div>
-        <appkit-button />
+        <WalletConnect />
       </header>
 
       <div className="shadow-authCardShadow md:w-[450px] w-full rounded-[16px] bg-white border border-[#E5E7EB] flex flex-col items-center py-8 px-6">
