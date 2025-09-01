@@ -1,4 +1,10 @@
 {
+  "lib/diamond-lib": {
+    "tag": {
+      "name": "v1.0.0-rc.4",
+      "rev": "9f8c71bb4f0ba22903608b2cd1246f6c719541d7"
+    }
+  },
   "lib/forge-std": {
     "tag": {
       "name": "v1.10.0",
