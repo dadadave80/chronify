@@ -10,9 +10,9 @@ export const listOfFAQs = [
       "Each product gets a unique, unforgeable digital identity—like a 'digital passport'—when it's created. Every step of its journey is permanently recorded in this passport. Because this history can't be faked or changed, it provides absolute proof of the product's origin and authenticity.",
   },
   {
-    question: "Why did you build Chronify on Hedera?",
+    question: "Why did you build Chronify on Base?",
     answer:
-      "We chose Hedera because it's extremely fast, secure, and has very low, predictable fees. This allows us to record every step of a product's journey almost instantly and affordably, making it practical for real-world business use.",
+      "We chose Base because it's extremely fast, secure, and has very low, predictable fees. This allows us to record every step of a product's journey almost instantly and affordably, making it practical for real-world business use.",
   },
   {
     question: "What makes Chronify different from other tracking systems?",
@@ -37,6 +37,6 @@ export const listOfFAQs = [
   {
     question: "Is my data and the product's history secure?",
     answer:
-      "Yes, completely. By using the Hedera network, every piece of information is locked in with powerful cryptography. Once a step in the journey is recorded, it can never be altered or deleted by anyone, guaranteeing a secure and trustworthy history.",
+      "Yes, completely. By using the Base network, every piece of information is locked in with powerful cryptography. Once a step in the journey is recorded, it can never be altered or deleted by anyone, guaranteeing a secure and trustworthy history.",
   },
 ];

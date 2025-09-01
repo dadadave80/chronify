@@ -35,7 +35,7 @@ const HowItWorks = () => {
                     A Digital Passport is Created
                   </h3>
                   <p className="mt-2 font-marcellus text-base md:text-lg">
-                    The moment a new product is made, it’s given its own unique
+                    The moment a new product is made, it&apos;s given its own unique
                     digital passport. This isn&apos;t a paper document;
                     it&apos;s a secure, one-of-a-kind digital record that
                     contains all the important details, like when, where, and

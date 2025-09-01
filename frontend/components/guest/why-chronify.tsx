@@ -68,7 +68,7 @@ const WhyChronify = () => {
                 <span className="block font-bold">Siloed Data:</span>
                 <p>
                   Participants in the supply chain (suppliers, distributors,
-                  retailers) cannot easily and securely share data, leading to
+                  buyers) cannot easily and securely share data, leading to
                   delays and disputes.
                 </p>
               </li>
@@ -82,14 +82,13 @@ const WhyChronify = () => {
             </h1>
             <p className="text-lg lg:text-xl text-[#000000CC] font-[400] font-marcellus">
               Chronify transforms the supply chain by creating a single,
-              immutable source of truth on the Hedera network. Each product is
-              assigned a unique digital identity as an ERC-721 NFT, and its
+              immutable source of truth on the Base network. Each product is
+              assigned a unique digital identity as an ERC-1155 NFT, and its
               entire lifecycle—from creation to final delivery—is recorded
               on-chain.
             </p>
             <p className="text-lg lg:text-xl text-[#000000CC] font-[400] font-marcellus">
-              By leveraging Hedera&apos;s high-throughput, low-fee, and
-              leaderless aBFT consensus, Chronify provides a real-time,
+              By leveraging Base high-throughput, low-fee, Chronify provides a real-time,
               tamper-proof audit trail that is accessible to all permissioned
               stakeholders. This isn&apos;t just tracking; it&apos;s digital
               proof of provenance.
