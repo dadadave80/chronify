@@ -5,11 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createAppKit } from "@reown/appkit/react";
 import React, { type ReactNode } from "react";
 import { cookieToInitialState, WagmiProvider, type Config } from "wagmi";
-import {
-  hederaMainnet,
-  hederaPreviewnet,
-  hederaTestnet,
-} from "@/config/chains";
+import { base, baseSepolia } from "viem/chains";
 
 // Set up queryClient
 const queryClient = new QueryClient();
@@ -26,7 +22,7 @@ const baseUrl = isProduction
 // Set up metadata
 const metadata = {
   name: "Chronify",
-  description: "Supply Chain Management on Hedera",
+  description: "Supply Chain Management on Base",
   url: baseUrl,
   icons: [`${baseUrl}/favicon-32x32.png`],
 };
@@ -35,8 +31,8 @@ const metadata = {
 createAppKit({
   adapters: [wagmiAdapter],
   projectId,
-  networks: [hederaPreviewnet, hederaTestnet, hederaMainnet],
-  defaultNetwork: hederaPreviewnet,
+  networks: [base, baseSepolia],
+  defaultNetwork: baseSepolia,
   metadata: metadata,
   features: {
     analytics: true,

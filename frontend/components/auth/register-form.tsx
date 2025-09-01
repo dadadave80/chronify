@@ -15,11 +15,10 @@ import {
   SelectValue,
 } from "../ui/select";
 import useRegister from "@/hooks/useRegister";
-import { WalletConnect } from "../shared/wallet-connect";
 
 const registerSchema = z.object({
   name: z.string().min(1, "Name is required"),
-  role: z.enum(["Supplier", "Transporter", "Retailer"], {
+  role: z.enum(["Supplier", "Transporter", "Buyer"], {
     errorMap: () => ({ message: "Role is required" }),
   }),
 });
@@ -37,7 +36,7 @@ const RegisterForm = () => {
             image="/white-logo-nobg.png"
           />
         </div>
-        <WalletConnect />
+        <appkit-button />
       </header>
 
       <div className="shadow-authCardShadow md:w-[450px] w-full rounded-[16px] bg-white border border-[#E5E7EB] flex flex-col items-center py-8 px-6">
@@ -89,7 +88,7 @@ const FormInputs = () => {
   };
 
   const handleRoleChange = (value: string) => {
-    setValue("role", value as "Supplier" | "Transporter" | "Retailer", {
+    setValue("role", value as "Supplier" | "Transporter" | "Buyer", {
       shouldValidate: true,
       shouldDirty: true,
       shouldTouch: true,
@@ -142,7 +141,7 @@ const FormInputs = () => {
           <SelectContent>
             <SelectItem value="Supplier">Supplier</SelectItem>
             <SelectItem value="Transporter">Transporter</SelectItem>
-            <SelectItem value="Retailer">Retailer</SelectItem>
+            <SelectItem value="Buyer">Buyer</SelectItem>
           </SelectContent>
         </Select>
 

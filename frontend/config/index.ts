@@ -1,6 +1,6 @@
 import { cookieStorage, createStorage } from "@wagmi/core";
 import { WagmiAdapter } from "@reown/appkit-adapter-wagmi";
-import { hederaTestnet, hederaMainnet, hederaPreviewnet } from "./chains";
+import { base, baseSepolia } from "viem/chains";
 
 // Get projectId from https://dashboard.reown.com
 export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
@@ -9,7 +9,7 @@ if (!projectId) {
   throw new Error("Project ID is not defined");
 }
 
-export const networks = [hederaPreviewnet, hederaTestnet, hederaMainnet];
+export const networks = [base, baseSepolia];
 
 //Set up the Wagmi Adapter (Config)
 export const wagmiAdapter = new WagmiAdapter({

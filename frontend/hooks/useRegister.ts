@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { PartiesFacetABI } from "@/abi/PartiesFacetABI";
-import { hederaPreviewnet } from "@/config/chains";
 import { CONTRACT_ADDRESS_PREVIEWNET } from "@/constants/contracts";
 import { useAppKitAccount, useAppKitNetwork } from "@reown/appkit/react";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef } from "react";
 import { toast } from "sonner";
+import { baseSepolia } from "viem/chains";
 import {
   useWaitForTransactionReceipt,
   useWriteContract,
@@ -29,8 +29,8 @@ const useRegister = () => {
           });
           return;
         }
-        if (chainId !== hederaPreviewnet.id) {
-          toast.error("Please switch to Previewnet", {
+        if (chainId !== baseSepolia.id) {
+          toast.error("Please switch to base sepolia", {
             position: "top-right",
           });
           return;
@@ -57,7 +57,7 @@ const useRegister = () => {
           case "Transporter":
             get_role_enum_by_index = 2;
             break;
-          case "Retailer":
+          case "Buyer":
             get_role_enum_by_index = 3;
             break;
           default:

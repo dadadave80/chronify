@@ -16,12 +16,11 @@ import {
     EthBalance,
 } from '@coinbase/onchainkit/identity';
 
-
 export function WalletConnect() {
     return (
         <div className="flex justify-end">
             <Wallet>
-                <ConnectWallet className='rounded-[8px] bg-black text-gray-100 font-nunitoSans font-[600] text-[16px]'>
+                <ConnectWallet className=''>
                     <Avatar className="h-6 w-6" />
                     <Name />
                 </ConnectWallet>
